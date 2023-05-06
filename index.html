@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dracula Timer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #f8f8f8;
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+    .timer {
+      font-size: 48px;
+      color: #333;
+    }
+    .buttons {
+      margin-top: 20px;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      margin: 0 10px;
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+    .input {
+      margin-top: 20px;
+    }
+    .input label {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .input input {
+      padding: 10px;
+      font-size: 18px;
+      width: 100%;
+    }
+  </style>
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="timer">
+      <div class="time-display">
+        <div class="time" id="hours">00</div>
+        <div class="colon">:</div>
+        <div class="time" id="minutes">00</div>
+        <div class="colon">:</div>
+        <div class="time" id="seconds">00</div>
+      </div>
+      <div class="buttons">
+        <button class="start-button" id="start"><i class="fas fa-play"></i></button>
+        <button class="pause-button" id="pause"><i class="fas fa-pause"></i></button>
+        <button class="reset-button" id="reset"><i class="fas fa-stop"></i></button>
+      </div>
+    </div>
+    <div class="picker">
+      <input type="text" id="timePicker" placeholder="Set time" class="flatpickr-input">
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="script.js"></script>
+</body>
+</html>
